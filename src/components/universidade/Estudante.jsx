@@ -1,4 +1,4 @@
-const Estudante = ({ nome, curso, universidade, disciplina }) => {
+const Estudante = ({ nome, curso, universidade, disciplina, digaOi }) => {
   return (
     <div>
       Nome: {nome}
@@ -8,6 +8,10 @@ const Estudante = ({ nome, curso, universidade, disciplina }) => {
       Universidade: {universidade}
       <br />
       Disciplina: {disciplina}
+      <br />
+      <button type="button" onClick={() => digaOi(nome)}>
+        Diga Oi
+      </button>
     </div>
   );
 };
