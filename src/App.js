@@ -5,7 +5,8 @@ import "./styles.css";
 // import IMC from "./components/imc";
 import Disciplina from "./components/universidade/Disciplina";
 import Estudante from "./components/universidade/Estudante";
-import Contador from "./components/estados/Contador";
+// import Contador from "./components/estados/Contador";
+import Sena from "./components/sena/Sena";
 
 const dizendoOi = (nome) => alert(`Oi, sou ${nome}!`);
 
@@ -36,6 +37,7 @@ export default function App() {
     //   <Heroi nome="Capitao America" />
     // </Grupo>
     // <GrupoDisciplina />
-    <Contador />
+    // <Contador />
+    <Sena />
   );
 }
