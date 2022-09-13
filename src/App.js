@@ -5,15 +5,12 @@ import "./styles.css";
 // import IMC from "./components/imc";
 import Disciplina from "./components/universidade/Disciplina";
 import Estudante from "./components/universidade/Estudante";
+import Contador from "./components/estados/Contador";
 
-export default function App() {
-  const dizendoOi = (nome) => alert(`Oi, sou ${nome}!`);
+const dizendoOi = (nome) => alert(`Oi, sou ${nome}!`);
 
+const GrupoDisciplina = () => {
   return (
-    // <IMC altura="160" peso="68" />;
-    // <Grupo titulo="Vingadores">
-    //   <Heroi nome="Capitao America" />
-    // </Grupo>
     <Disciplina titulo="Fundamentos de Programação">
       <Estudante
         nome="Isaque Veras"
@@ -29,5 +26,16 @@ export default function App() {
         digaOi={dizendoOi}
       />
     </Disciplina>
+  );
+};
+
+export default function App() {
+  return (
+    // <IMC altura="160" peso="68" />;
+    // <Grupo titulo="Vingadores">
+    //   <Heroi nome="Capitao America" />
+    // </Grupo>
+    // <GrupoDisciplina />
+    <Contador />
   );
 }
