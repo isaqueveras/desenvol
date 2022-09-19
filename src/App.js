@@ -6,7 +6,7 @@ import "./styles.css";
 // import Disciplina from "./components/universidade/Disciplina";
 // import Estudante from "./components/universidade/Estudante";
 // import Contador from "./components/estados/Contador";
-import Sena from "./components/sena/Sena";
+// import Sena from "./components/sena/Sena";
 import VotaCidade from "./components/estados/VotaCidade";
 
 // const dizendoOi = (nome) => alert(`Oi, sou ${nome}!`);
