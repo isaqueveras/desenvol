@@ -1,45 +1,23 @@
-import "./styles.css";
+import { Routes, Route } from "react-router-dom";
 
-// import Grupo from "./components/vingadores/Grupo";
-// import Heroi from "./components/vingadores/Heroi";
-// import IMC from "./components/imc";
-// import Disciplina from "./components/universidade/Disciplina";
-// import Estudante from "./components/universidade/Estudante";
-// import Contador from "./components/estados/Contador";
-// import Sena from "./components/sena/Sena";
-import VotaCidade from "./components/estados/VotaCidade";
-
-// const dizendoOi = (nome) => alert(`Oi, sou ${nome}!`);
-
-// const GrupoDisciplina = () => {
-//   return (
-//     <Disciplina titulo="Fundamentos de Programação">
-//       <Estudante
-//         nome="Isaque Veras"
-//         curso="Ciencia da Computação"
-//         universidade="UFC Quixadá"
-//         digaOi={dizendoOi}
-//       />
-//       <br />
-//       <Estudante
-//         nome="João"
-//         curso="Engenharia da Computação"
-//         universidade="UFC Quixadá"
-//         digaOi={dizendoOi}
-//       />
-//     </Disciplina>
-//   );
-// };
+import Home from "./components/Home";
+import Menu from "./components/Menu";
+import CreateStudent from "./components/students/CreateStudent";
+import EditStudent from "./components/students/EditStudent";
+import ListStudent from "./components/students/ListStudent";
 
 export default function App() {
   return (
-    // <IMC altura="160" peso="68" />;
-    // <Grupo titulo="Vingadores">
-    //   <Heroi nome="Capitao America" />
-    // </Grupo>
-    // <GrupoDisciplina />
-    // <Contador />
-    // <Sena />
-    <VotaCidade />
+    <div className="p-0 bg-dark">
+      <Menu theme="dark" />
+      <div className="container d-flex w-100 h-100">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="student/create" element={<CreateStudent />} />
+          <Route path="student/list" element={<ListStudent />} />
+          <Route path="student/edit" element={<EditStudent />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
