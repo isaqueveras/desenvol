@@ -14,7 +14,7 @@ const Questao01B = () => {
       <h1 className="title">Questao01B</h1>
       <div className="mt-3">
         {disciplinas.map(item => {
-          return <p>{item}</p>
+          return <p key={item}>{item}</p>
         })}
       </div>
     </div>
