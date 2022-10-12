@@ -1,6 +1,7 @@
 import Questao01 from "./components/Questao01";
 import Questao02 from "./components/Questao02";
 import Questao03 from "./components/Questao03";
+import Questao04 from "./components/Questao04";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <br /><hr /><br />
         <Questao03 />
         <br /><hr /><br />
+        <Questao04 />
       </div>
     </div>
   );

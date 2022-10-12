@@ -7,7 +7,7 @@ const Questao03 = () => {
   const [pokemons, setPokemons] = useState({})
 
   useEffect(() => {
-    api.get(`pokemon?limit=10&offset=${offset}`)
+    api.get(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`)
       .then((res) => setPokemons(res.data))
       .catch((err) => {
         console.error(err)
